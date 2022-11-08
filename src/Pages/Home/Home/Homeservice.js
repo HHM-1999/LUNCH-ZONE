@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import SingleService from './SingleService';
+import { Link } from 'react-router-dom';
+import SingleService from '../Services/SingleService';
 
 
-const Services = () => {
+const Homeservice = () => {
+
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('http://localhost:5000/service')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
     return (
-        <div >
+        <div>
             <div className='mt-9'>
                 <h2 className='mt-8 text-black font-bold text-7xl text-center'>Food Counter</h2>
             </div>
@@ -24,9 +26,11 @@ const Services = () => {
                 }
 
             </div>
-
+            <div className='mx-auto w-96 mt-9'>
+                <Link to='/services' ><button className="btn btn-primary ">See All</button></Link>
+            </div>
         </div>
     );
 };
 
-export default Services;
+export default Homeservice;

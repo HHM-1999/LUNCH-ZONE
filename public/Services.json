@@ -1,0 +1,45 @@
+[
+  {
+    "Name": "Hydrabadi Chicken Biriyani ",
+    "image": "https://img.freepik.com/free-photo/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg?size=626&ext=jpg&ga=GA1.2.89839238.1664401225&semt=sph",
+    "rating": 4.5,
+    "price": "200tk",
+    "short_description": "One of the most famous dish in India . It is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together.It's fiery and aromatic, and heady with black peppercorns, star anise, and cinnamon. The region's biryani incorporates all of these flavors, with an added dose of heat from ground green chiles. Half plates price is 150tk , Full Plates Price is 200 tk and Quarter plates is 90 tk . You can also get free healthy salad with any type of plates ."
+  },
+  {
+    "Name": "Tandoori Chicken",
+    "image": "https://as1.ftcdn.net/v2/jpg/01/39/30/18/1000_F_139301819_Ip1WMIHLc6vtFjkXNkuhiVw3FqaXUZyd.jpg",
+    "rating": 5.0,
+    "price": "300tk",
+    "short_description": "One of the most famous dish in Bangladesh . tandoori chicken, a dish of roasted chicken marinated in yogurt and generously spiced, giving the meat its trademark red colour. It is named for the cylindrical clay oven in which it is cooked, a tandoor.You can get 150tk with 4 pieces of chickens , 300 tk with 8 pieces of chickens. You can also get free healthy salad with any type of plates ."
+  },
+  {
+    "Name": "Noodles ",
+    "image": "https://t4.ftcdn.net/jpg/02/70/92/11/240_F_270921183_kxDUESPi7VLjggA3pjy0qsua1IfxTNf3.jpg",
+    "rating": 4.5,
+    "price": "80tk",
+    "short_description": "One of the most famous dish in Bangladesh . Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings.noodle, a cooked egg-and-flour paste prominent in European and Asian cuisine, generally distinguished from pasta by its elongated ribbonlike form. Noodles are commonly used to add body and flavour to broth soups. They are commonly boiled or sautéed and served with sauces and meats or baked in casseroles.. You can also get free healthy salad with any type of plates ."
+  },
+  {
+    "Name": "Mutton Kacchi ",
+    "image": "https://t3.ftcdn.net/jpg/04/05/49/12/240_F_405491253_c3xy4oyo2ac4MufIhbeI9IcF9mKtp1jH.jpg",
+    "rating": 5.0,
+    "price": "200tk",
+    "short_description": "Kacchi is the famous and favourite dish for all . In a Mutton Kacchi, layers of raw marinated meat are alternated in layers with wet, pre-soaked, raw rice (which may be treated with different spices as above), and cooked together by baking, or medium-to-low direct heat (typically, for at least an hour). Mutton kacchi is a delicious rice dish where tender goat or lamb meat pieces are marinated with lots of fried onions, whole spices, fresh herbs and yoghurt. Half plates price is 150tk , Full Plates Price is 200 tk and Quarter plates is 90 tk . You can also get free healthy salad with any type of plates ."
+  },
+  {
+    "Name": " Thai Food with Prons ",
+    "image": "https://img.freepik.com/free-photo/thai-food-tom-yum-kung-river-prawn-spicy-soup_1150-35451.jpg?size=626&ext=jpg&ga=GA1.2.89839238.1664401225&semt=sph",
+    "rating": 4.5,
+    "price": "450tk",
+    "short_description": "One of the most famous dish in Italy . Thai food as an exotic version of Chinese food. It has many similar elements, but some have more extreme flavors such as ultra-sweet, salty or that ultra-spiciness, like Indian foods. Always start off with more familiar flavors like a yellow curry that's less spicy with noodles and rice. You can also get free healthy salad with any type of plates ."
+  },
+  {
+    "Name": "Hilsha Fish Curry",
+    "image": "https://img.freepik.com/premium-photo/fish-curry-seer-fish-curry-traditional-indian-fish-curry-kerala-special-dish-using-coconut-arranged-white-bowl-garnished-with-curry-leaves-malabar-tamarind-white-textured-background_527904-2015.jpg?size=626&ext=jpg&ga=GA1.2.89839238.1664401225&semt=sph",
+    "rating": 4.5,
+    "price": "200tk",
+    "short_description": "One of the most famous Fish in Bangladesh . This fish is our main food .It is an extremely delicious and spicy fish curry recipe that you can be easily prepared at home. The ingredients used to prepare this dish are Hilsha fish, salt, turmeric powder, black cumin seeds, green chilies, mustard oil and water. Mustard oil and black cumin seeds are significant in the preparation of this dish. You can also get free healthy salad with these dish ."
+  }
+  
+]
