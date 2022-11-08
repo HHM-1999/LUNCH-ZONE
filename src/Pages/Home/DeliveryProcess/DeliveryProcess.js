@@ -3,7 +3,7 @@ import React from 'react';
 const DeliveryProcess = () => {
     return (
         <div>
-            <h1 className='mt-9 text-black font-bold text-6xl text-center'>How can I deliver foods</h1>
+            <h1 className='mt-9 text-black font-bold text-6xl text-center p-9'>How can I deliver foods</h1>
             <div>
                 <div className='flex flex-wrap mx-9 gap-20 mt-9 mb-9'>
                     <div className="card w-96 bg-base-100 shadow-xl">

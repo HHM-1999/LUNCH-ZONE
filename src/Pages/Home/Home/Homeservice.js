@@ -13,7 +13,7 @@ const Homeservice = () => {
     }, [])
     return (
         <div>
-            <div className='mt-9'>
+            <div className='mt-9 p-6'>
                 <h2 className='mt-8 text-black font-bold text-7xl text-center'>Food Counter</h2>
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
@@ -26,7 +26,7 @@ const Homeservice = () => {
                 }
 
             </div>
-            <div className='mx-auto w-96 mt-9'>
+            <div className='mx-auto w-96 mt-9 px-6 text-center'>
                 <Link to='/services' ><button className="btn btn-primary ">See All</button></Link>
             </div>
         </div>

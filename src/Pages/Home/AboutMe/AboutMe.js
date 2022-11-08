@@ -3,7 +3,7 @@ import React from 'react';
 const AboutMe = () => {
     return (
         <div>
-            <h1 className='mt-8 text-black font-bold text-7xl text-center'>About me</h1>
+            <h1 className='mt-8 text-black font-bold text-7xl text-center p-9'>About me</h1>
             <div className='mt-8 mx-56'>
                 <div className="card card-side bg-base-100 shadow-xl">
                     <figure><img src="https://img.freepik.com/free-photo/sassy-blonde-girl-show-okay-sign-wink-smiling-assure-you-will-like-this-best-choice-ever-made_176420-33331.jpg?size=626&ext=jpg&ga=GA1.2.89839238.1664401225&semt=sph" alt="Movie" /></figure>
