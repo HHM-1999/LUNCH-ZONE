@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import SingleService from './SingleService';
-import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
+// import { PhotoProvider, PhotoView } from 'react-photo-view';
+// import 'react-photo-view/dist/react-photo-view.css';
 
 
 
 const Services = ({ service }) => {
-    const { image } = service;
+    // const { image } = service;
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/services')
@@ -31,11 +31,11 @@ const Services = ({ service }) => {
 
 
             </div>
-            <PhotoProvider>
+            {/* <PhotoProvider>
                 <PhotoView src="/1.jpg">
                     <img src={image} alt="" />
                 </PhotoView>
-            </PhotoProvider>
+            </PhotoProvider> */}
 
 
         </div>

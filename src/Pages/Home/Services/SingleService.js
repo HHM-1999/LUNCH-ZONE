@@ -12,8 +12,8 @@ const SingleService = ({ service }) => {
                     <h2 className="card-title">{Name}</h2>
                     <p className='text-2xl text-blue-600 font-semibold'>Price : {price}</p>
                     <p>{short_description.slice(0, 70)}...</p>
-                    <div className="card-actions justify-end">
-                        <Link to={`/details/${_id}`}> <button className="btn btn-primary">View Details</button></Link>
+                    <div className="p-2 text-center">
+                        <Link to={`/details/${_id}`}> <button className="btn btn-primary ">View Details</button></Link>
                     </div>
                 </div>
 
