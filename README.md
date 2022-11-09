@@ -1,5 +1,5 @@
 ### My project - Lunch Zone 
-### code link :
+### code link : https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-HHM-1999
 
 ### Client Side 
 
@@ -13,6 +13,8 @@
 
 
 ### Server side 
+
+### Code link : https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-HHM-1999
 
 - There are diiferent type of functionality I used:
 
