@@ -79,13 +79,13 @@ const Details = () => {
                     <h1 className='text-4xl font-bold text-center my-8 '>Reviews</h1>
 
                     <form onSubmit={handleReview}>
-                        <input type='text' placeholder="Write Here" name='FoodName' defaultValue={Name} readOnly className='input input-ghost text-center w-full' disabled
+                        <input type='text' placeholder="Write Here" name='FoodName' defaultValue={Name} readOnly className='input input-ghost text-center w-full shadow-xl' disabled
                         ></input><br />
                         <div className='mt-4 text-center'>
-                            <input type="text" placeholder="Email" name="email" defaultValue={user?.email} className="input input-bordered mb-2 input-primary w-1/2" readOnly></input>
+                            <input type="text" placeholder="Email" name="email" defaultValue={user?.email} className="input input-bordered mb-2 input-dark w-1/2 shadow-xl" readOnly></input>
                             <br></br>
 
-                            <textarea className='textarea textarea-primary w-1/2 h-60' name='reviewText' placeholder='Give your Review here'></textarea>
+                            <textarea className='textarea textarea-dark w-1/2 h-60 shadow-xl' name='reviewText' placeholder='Give your Review here'></textarea>
 
                         </div>
                         <div className='form-control w-1/2 mx-auto'>
