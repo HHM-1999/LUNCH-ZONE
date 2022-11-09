@@ -1,3 +1,76 @@
+### My project - Lunch Zone 
+### code link :
+
+### Client Side 
+
+- There are diiferent type of functionality I used:
+1. create-react-app
+2. react-router-dom
+3. Framework -Tailwind And DaisyUI
+4. react-icons
+5. react-photo-view
+6. Firebase
+
+
+### Server side 
+
+- There are diiferent type of functionality I used:
+
+1. npm init -y
+2. npm express
+3. npm cors
+4. npm mongodb
+5. npm dotenv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

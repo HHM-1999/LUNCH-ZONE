@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const SingleService = ({ service }) => {
     const { image, Name, price, _id, short_description } = service;
     return (
@@ -15,6 +16,7 @@ const SingleService = ({ service }) => {
                         <Link to={`/details/${_id}`}> <button className="btn btn-primary">View Details</button></Link>
                     </div>
                 </div>
+
             </div>
 
 
