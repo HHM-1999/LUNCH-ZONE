@@ -17,13 +17,13 @@ const Header = () => {
 
                         <li><Link>Reviews</Link></li>
                         <li><Link>Add Order</Link></li>
-                        <li><Link>Blog</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end  gap-4">
                     <Link className="btn" to='/login'>Login</Link>
                     <Link className="btn" to='/signup'>Register</Link>
-                    <Link className="btn" to='logout'>LogOut</Link>
+                    <Link className="btn" to='/logout'>LogOut</Link>
 
 
                 </div>

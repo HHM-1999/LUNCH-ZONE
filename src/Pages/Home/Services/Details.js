@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 const Details = () => {
     const { Name, image, price, rating, short_description } = useLoaderData();
     return (
-        <div className='mx-9  h-full p-6'>
+        <div className='mx-9 w-auto h-full p-6'>
             <div className="card card-side bg-base-100 shadow-xl">
                 <figure><img src={image} alt="Movie" /></figure>
                 <div className="card-body">

@@ -1,12 +1,49 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { signInWithEmailAndPassword, GoogleAuthProvider } from 'firebase/auth';
+import { auth, AuthContext } from '../../Context/AuthProvider/AuthProvider';
+
 
 
 const Login = () => {
+    const { providerLogin } = useContext(AuthContext);
+    const googleProvider = new GoogleAuthProvider();
 
     const handleLogin = event => {
         event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // console.log("IN2")
+                // Signed in 
+                const user = userCredential.user;
+                console.log({ x: user });
+                // ...
+            })
+            .catch((error) => {
+                // console.log("Y")
+                // const errorCode = error.code;
+                // const errorMessage = error.message;
+            });
     }
+
+
+    ///Google sign in
+    const handleGoogleSignIn = () => {
+        providerLogin(googleProvider)
+            .then(result => {
+                // const user = result.user;
+                // console.log(user);
+            })
+            .catch(error => console.error(error)
+            )
+
+
+    }
+
+
 
     return (
         <div className="hero w-full my-20">
@@ -37,6 +74,8 @@ const Login = () => {
                         </div>
                     </form>
                     <p className='text-center'>New Member ???  <Link className='text-blue-600 font-bold' to="/signup">Sign Up</Link> </p>
+                    <p className='text-center mt-4'>Also Sign in with :  <Link onClick={handleGoogleSignIn} className='text-center' ><button className='btn btn-primary'>Google</button></Link></p>
+
                 </div>
             </div>
         </div>
