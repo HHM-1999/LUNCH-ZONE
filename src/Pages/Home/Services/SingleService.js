@@ -11,7 +11,7 @@ const SingleService = ({ service }) => {
             <div className="card w-96  bg-base-100 shadow-xl p-6 mx-auto h-full">
                 <figure><PhotoProvider>
                     <PhotoView src={service?.image}>
-                        <img src={service?.image} alt="Shoes" />
+                        <img src={service?.image} alt="Foods" />
                     </PhotoView>
                 </PhotoProvider>
                 </figure>

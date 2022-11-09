@@ -30,11 +30,7 @@ const Services = ({ service }) => {
 
 
             </div>
-            {/* <PhotoProvider>
-                <PhotoView src="">
-                    <img src={image} alt="" />
-                </PhotoView>
-            </PhotoProvider> */}
+
 
 
 
