@@ -1,10 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
-import { toast } from "react-toastify";
+import moment from 'moment';
+
+
+
+
+
 
 const Details = () => {
+
+    const CurrentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+    console.log(CurrentTime);
+
     const { user } = useContext(AuthContext);
+    console.log(user);
     const handleReview = (event) => {
         event.preventDefault();
         const email = user?.email || " UnRegister";
@@ -16,7 +26,8 @@ const Details = () => {
         const reviews = {
             FoodName,
             email,
-            reviewText
+            reviewText,
+            CurrentTime
         }
         fetch('http://localhost:5000/reviews', {
             method: 'POST',
@@ -35,6 +46,15 @@ const Details = () => {
             })
     }
     const { Name, image, price, rating, short_description } = useLoaderData();
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/reviews')
+            .then(res => res.json())
+            .then(data => {
+                setReviews(data);
+            })
+    }, [])
     return (
         <div className='mx-9 w-auto h-full p-6'>
             <div className="card card-side bg-base-100 shadow-xl">
@@ -44,6 +64,8 @@ const Details = () => {
                     <p><span className='text-orange'>Price:</span>{price}</p>
                     <p>Rating:{rating}</p>
                     <p>Description:{short_description}</p>
+
+
 
                 </div>
 
@@ -61,6 +83,7 @@ const Details = () => {
                         ></input><br />
                         <div className='mt-4 text-center'>
                             <input type="text" placeholder="Email" name="email" defaultValue={user?.email} className="input input-bordered mb-2 input-primary w-1/2" readOnly></input>
+                            <br></br>
 
                             <textarea className='textarea textarea-primary w-1/2 h-60' name='reviewText' placeholder='Give your Review here'></textarea>
 
@@ -68,9 +91,30 @@ const Details = () => {
                         <div className='form-control w-1/2 mx-auto'>
                             <input className='btn btn-primary hover:bg-white-500 mt-4' type="submit" value="Add Reviews" />
                         </div>
+
                     </form>
+
+
                 </section>
+
             </div>
+            {
+                reviews.map((review) => {
+                    return (
+                        <div className='flex flex-wrap p-9 '>
+                            <div>
+                                <image src="" />
+                            </div>
+                            <div>
+                                <p className='semi-font-bold text-blue-600'>Written by :{review.email} </p>
+                                <p className='semi-font-bold text-blue-600'>Time : {review.CurrentTime}</p>
+                                <p className='semi-font-bold text-blue-600'>Comment : {review.reviewText}</p>
+                            </div>
+                        </div>
+                    )
+                })
+            }
+
 
         </div>
     );
