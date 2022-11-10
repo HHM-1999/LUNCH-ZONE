@@ -6,10 +6,12 @@ import { auth, AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 
 const Login = () => {
-    const { providerLogin } = useContext(AuthContext);
+    const { providerLogin, setLoading } = useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider();
 
     const handleLogin = event => {
+
+
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
@@ -20,13 +22,22 @@ const Login = () => {
                 // Signed in 
                 const user = userCredential.user;
                 console.log({ x: user });
-                // ...
+
+
             })
             .catch((error) => {
                 // console.log("Y")
                 // const errorCode = error.code;
                 // const errorMessage = error.message;
-            });
+            })
+            .finally(() => {
+                setLoading(false);
+            })
+
+
+
+
+
     }
 
 

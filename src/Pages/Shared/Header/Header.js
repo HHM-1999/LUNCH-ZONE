@@ -23,6 +23,7 @@ const Header = () => {
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/services'>Services</Link></li>
                         <li><Link to="/blog">Blog</Link></li>
+                        <li> <Link className='' to='/review' >My Review</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end  gap-4">
@@ -30,12 +31,16 @@ const Header = () => {
 
                     {
                         user?.uid ? <>
+
                             <Link className="btn" to='/logout' onClick={handelLogout}>LogOut</Link>
+
                         </>
                             :
                             <>
                                 <Link className="btn" to='/login'>Login</Link>
                                 <Link className="btn" to='/signup'>Register</Link>
+
+
                             </>
                     }
 

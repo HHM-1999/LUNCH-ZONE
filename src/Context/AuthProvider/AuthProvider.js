@@ -20,14 +20,16 @@ const Authprovider = ({ children }) => {
 
     ///GOOGLE///
     const providerLogin = (provider) => {
+        setLoading(true);
         return signInWithPopup(auth, provider);
     }
 
     useEffect(() => {
-        setLoading(false);
+
         const unsubscribe = onAuthStateChanged(auth, (recentUser) => {
             console.log('user inside changed', recentUser);
             setUser(recentUser);
+            setLoading(false);
 
         });
         return () => {
@@ -40,7 +42,7 @@ const Authprovider = ({ children }) => {
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
-    const authInfo = { user, providerLogin, createUser, loading, logout }
+    const authInfo = { user, providerLogin, createUser, loading, logout, setLoading }
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
