@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAuR_SS-I53JFyMKzlR8sVkF2uIZg-kMbk",
-    authDomain: "lunch-zone.firebaseapp.com",
-    projectId: "lunch-zone",
-    storageBucket: "lunch-zone.appspot.com",
-    messagingSenderId: "734834532463",
-    appId: "1:734834532463:web:d23666042f9e93d2122d9a"
+    apiKey: "AIzaSyAo0SNee89qs8VHFiEByN5vuWVx1qV5CCk",
+    authDomain: "lunch-zone-cad89.firebaseapp.com",
+    projectId: "lunch-zone-cad89",
+    storageBucket: "lunch-zone-cad89.appspot.com",
+    messagingSenderId: "728993401805",
+    appId: "1:728993401805:web:7bd2a35619416b1c1cd284"
 };
 
 // Initialize Firebase
