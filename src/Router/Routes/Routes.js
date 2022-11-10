@@ -1,6 +1,7 @@
 import Main from "../../Layout/Main";
 import Blog from "../../Pages/Home/Blog/Blog";
 import Home from "../../Pages/Home/Home/Home";
+import AddService from "../../Pages/Home/Services/AddService";
 import Details from "../../Pages/Home/Services/Details";
 import Services from "../../Pages/Home/Services/Services";
 import Login from "../../Pages/Login/Login";
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
                 element: <Services></Services>
             },
             {
+                path: '/addservice',
+                element: <AddService></AddService>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
@@ -50,10 +55,10 @@ const router = createBrowserRouter([
             },
             {
                 path: '*',
-                element: <div className='text-center p-12'>
-                    <h1>404</h1>
-                    <h2>Oops!!! You're Lost 😥</h2>
-                    <p>The Page you are looking for was not found..................</p>
+                element: <div className='text-center p-12 mt-6'>
+                    <h1 className="text-2xl text-error font-bold">404</h1>
+                    <h2 className="text-2xl text-error font-bold" >Oops!!! You're Lost 😥</h2>
+                    <p className="text-2xl text-error font-bold">The Page you are looking for was not found..................</p>
                 </div>
             },
             {

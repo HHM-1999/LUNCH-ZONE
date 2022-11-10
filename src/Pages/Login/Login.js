@@ -18,17 +18,14 @@ const Login = () => {
         const password = form.password.value;
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                // console.log("IN2")
-                // Signed in 
+
                 const user = userCredential.user;
                 console.log({ x: user });
 
 
             })
             .catch((error) => {
-                // console.log("Y")
-                // const errorCode = error.code;
-                // const errorMessage = error.message;
+
             })
             .finally(() => {
                 setLoading(false);

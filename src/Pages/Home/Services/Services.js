@@ -12,6 +12,26 @@ const Services = ({ service }) => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+
+
+    const Handleadd = (id) => {
+        const proceed = window.confirm('Do you want to add in cart ?');
+        if (proceed) {
+            fetch(`http://localhost:5000/services/${id}`, {
+                method: 'POST'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.addCount > 0) {
+                        alert("Successfully added");
+                    }
+                    const remaining = services.filter(ser =>
+                        ser._id !== id);
+                    setServices(remaining);
+                })
+        }
+    }
     return (
         <div >
             <div className='mt-9'>
@@ -22,6 +42,7 @@ const Services = ({ service }) => {
                     services.map(service => <SingleService
                         key={service._id}
                         service={service}
+                        Handleadd={Handleadd}
 
                     ></SingleService>)
                 }

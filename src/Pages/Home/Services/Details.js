@@ -3,11 +3,6 @@ import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import moment from 'moment';
 
-
-
-
-
-
 const Details = () => {
 
     const CurrentTime = moment().format('MMMM Do YYYY, h:mm:ss a');

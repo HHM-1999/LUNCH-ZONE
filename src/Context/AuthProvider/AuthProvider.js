@@ -37,7 +37,7 @@ const Authprovider = ({ children }) => {
         }
     }, [])
 
-
+    ///email and password
 
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)

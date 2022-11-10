@@ -23,10 +23,7 @@ const Banner = () => {
                 </div>
 
             </div>
-            {/* <div>
-                <h1 className='text-black text-4xl font-bold mb-5 mx-56 '>Cool Guys!!! I've got you covered</h1>
-                <h1 className='text-black text-4xl font-bold mx-56'>Everyday of the week..</h1>
-            </div> */}
+
 
         </div>
     );

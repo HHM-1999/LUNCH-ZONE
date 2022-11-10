@@ -12,7 +12,7 @@ const MyReview = () => {
 
     const Handledelete = (id) => {
 
-        const proceed = window.confirm('Are you want to delete?');
+        const proceed = window.confirm('Do you want to delete?');
         if (proceed) {
             fetch(`http://localhost:5000/reviews/${id}`, {
                 method: 'DELETE'
