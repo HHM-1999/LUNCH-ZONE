@@ -22,10 +22,7 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>
             },
-            {
-                path: '/home',
-                element: <Home></Home>
-            },
+
             {
                 path: '/services',
                 element: <Services></Services>
@@ -49,7 +46,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/details/:id",
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+                loader: ({ params }) => fetch(`https://server-side-rosy.vercel.app/services/${params.id}`),
                 element: <Details></Details>
 
             },

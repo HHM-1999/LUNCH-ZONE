@@ -5,7 +5,7 @@ const MyReview = () => {
 
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://server-side-rosy.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
@@ -14,7 +14,7 @@ const MyReview = () => {
 
         const proceed = window.confirm('Do you want to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/reviews/${id}`, {
+            fetch(`https://server-side-rosy.vercel.app/reviews/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

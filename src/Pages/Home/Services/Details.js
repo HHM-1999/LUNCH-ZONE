@@ -24,7 +24,7 @@ const Details = () => {
             reviewText,
             CurrentTime
         }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://server-side-rosy.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
@@ -44,7 +44,7 @@ const Details = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://server-side-rosy.vercel.app/reviews')
             .then(res => res.json())
             .then(data => {
                 setReviews(data);

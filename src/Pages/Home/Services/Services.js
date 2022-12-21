@@ -8,7 +8,7 @@ const Services = ({ service }) => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://server-side-rosy.vercel.app/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -17,7 +17,7 @@ const Services = ({ service }) => {
     const Handleadd = (id) => {
         const proceed = window.confirm('Do you want to add in cart ?');
         if (proceed) {
-            fetch(`http://localhost:5000/services/${id}`, {
+            fetch(`https://server-side-rosy.vercel.app/services/${id}`, {
                 method: 'POST'
             })
                 .then(res => res.json())
