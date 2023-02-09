@@ -3,9 +3,9 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='mt-9 flex flex-wrap gap-4'>
+        <div className='mt-9 flex flex-wrap gap-4 md:flex max-sm'>
 
-            <div className='w-auto mx-9'>
+            <div className='w-auto mx-9 md:mx-9 sm:mx-9'>
                 <div className="carousel rounded-box">
                     <div className="carousel-item">
                         <img src="https://img.freepik.com/free-photo/dahi-puri-chat-is-indian-road-side-snack-item-which-is-especially-popular-state-maharashtra-india_466689-73908.jpg?size=626&ext=jpg&ga=GA1.2.89839238.1664401225&semt=sph" alt="Burger" />
