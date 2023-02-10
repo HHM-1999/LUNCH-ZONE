@@ -17,7 +17,7 @@ const Header = () => {
                 <div className="navbar-start ">
                     <Link className="btn btn-ghost normal-case text-xl ml-3 mx-9"> 🥘 LUNCH ZONE</Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center  lg:flex md:flex">
 
                     <ul className="menu menu-horizontal p-0">
                         <li><Link to='/home'>Home</Link></li>
